@@ -1,7 +1,6 @@
 import Titulo from "../../components/Titulo";
 import Banner from "../../components/Banner";
-import Cabecalho from "../../components/Cabecalho";
-import Rodape from "../../components/Rodape";
+
 import Card from "../../components/Card";
 import videos from "../../json/db.json";
 import styles from "./inicio.module.css";
@@ -9,7 +8,6 @@ import styles from "./inicio.module.css";
 function Inicio() {
   return (
     <>
-      <Cabecalho />
       <Banner imagem="home" />
       <Titulo>
         <h1>Um lugar para guardar seus vídeos e filmes!</h1>
@@ -19,7 +17,6 @@ function Inicio() {
           return <Card {...video} key={video.id} />;
         })}
       </section>
-      <Rodape />
     </>
   );
 }
